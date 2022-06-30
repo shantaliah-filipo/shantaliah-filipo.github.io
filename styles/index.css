@@ -1,4 +1,47 @@
+* {
+  box-sizing: border-box;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: #777;
+}
+
+
+.nav ul {
+  margin: 0;
+}
+
+.nav li {
+  display: inline;
+}
+
+nav a {
+  display: inline-block;
+  padding: .5em;
+  color: white;
+  text-decoration: none;
+}
+
+.main-nav {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: lighter;
+  border-bottom: 1px solid gray;
+}
+
+.main-nav li {
+  padding: 0 5%;
+}
+
+.nav a:hover {
+  background-color:aquamarine;
+}
+
 /* Header / Blog Title */
+.main-header {
+background-image: url(placeholder);
+background-color: peachpuff;
+background-size: cover;
+padding-bottom: 30px;
+}
 .header {
 background-color: rgba(255, 255, 255, 0.966);
 font-size: 30px;
@@ -6,34 +49,29 @@ text-align: center;
 padding: 50px;
 }
 
+
+
+
+
 /* Top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #13e2cd;
+  background-color: #f2f9f8e9;
 }
 
-body {
-  background-color: rgb(244, 241, 236);
+/* Top navigation bar links */
+.topnav a {
+  float: right;
+  display: block;
+  color: black;
   text-align: center;
+  padding: 20px 20px;
+  text-decoration: wavy;
+  border-right: 1px solid white;
 }
 
-h1 {
-  font-family: 'Titan One', cursive;
-  font-size: 25px;
+/* Links - change color on hover */
+.topnav a:hover {
+  background-color: black;
+  color: pink;
 }
-
-p {
-  font-size: 15px;
-  margin-bottom: 200px;
-}
-
-.blue-text {
-  color: blue;
-}
-
-#name {
-  font-size: 25px;
-}
-
-/* Footer */
-
