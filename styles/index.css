@@ -2,7 +2,9 @@
   box-sizing: border-box;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(0, 0, 0);
+  background-color: rgb(243, 220, 199);
 }
+
 
 /* navigation */
 .nav ul {
@@ -13,16 +15,15 @@
   display: inline;
 }
 
-nav a {
+.nav a {
   display: inline-block;
   padding: .5em;
-  color: white;
   text-decoration: none;
 }
 
 .main-nav {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.2rem;
   font-weight: lighter;
   justify-content: center;
   border-width: 0vmax;
@@ -30,7 +31,7 @@ nav a {
 }
 
 .main-nav li {
-  padding: 0 5%;
+  padding: 5% 5%;
 }
 
 .nav a:hover {
@@ -45,7 +46,6 @@ background-size: cover;
 padding-bottom: 30px;
 }
 
-
 .header {
 background-color: black;
 font-size: 10px;
@@ -54,9 +54,12 @@ padding: 50px;
 }
 
 .sprint-headings {
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
-  font-direction: none;
+  text-decoration: none;
+}
+.sprint-headings a:hover {
+  background-color:white;
 }
 /* cards for articles */
 .card {
@@ -66,8 +69,13 @@ padding: 50px;
   margin-top: 20px;
   display: inline-block;
   border-width: 0vmax;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
 }
 /* Trying to align the 3 cards I've created */
 .column {
@@ -78,9 +86,10 @@ padding: 50px;
 
 .row {
   align-items: center;
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
+  height: auto;
 }
 
 .row:after {
@@ -89,16 +98,37 @@ padding: 50px;
   clear: both; 
 }
 
-.p text {
+p {
   text-align: center;
+}
+.img-caption {
+  text-align: center;
+}
+.img {
+  border-radius: 50px;
+  max-width: 100%;
+  height: auto; 
+  margin-left: auto;
+  margin-right: auto; 
+  display: block; 
 }
 
 /* Responsive CSS */
-
-@media screen and (max-width: 400px) {
- .column {
+@media screen and (min-width: 320px) {
+  body {
   width: 100%;
-  display: block;
-  margin-bottom: 25px;
+  font-size:14px;
+ } 
+}
+
+@media screen and (min-width: 768px) {
+  body {
+ font-size: 18px;
+ } 
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+  font-size: 20px;
  } 
 }
