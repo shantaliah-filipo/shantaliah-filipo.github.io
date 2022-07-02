@@ -2,9 +2,19 @@
   box-sizing: border-box;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(0, 0, 0);
+  background-color: rgb(243, 220, 199);
 }
 
 /* navigation */
+.main-header {
+  background-size: cover;
+  padding-bottom: 30px;
+  }
+
+.main-nav li {
+  padding: 5% 5%;
+}
+
 .nav ul {
   margin: 0;
 }
@@ -28,22 +38,12 @@
   color: black; 
 }
 
-.main-nav li {
-  padding: 5% 5%;
-}
-
 .nav a:hover {
   background-color:white;
 }
 
 
 /* Headers */
-.main-header {
-background-image: url(placeholder);
-background-color: rgb(243, 220, 199);
-background-size: cover;
-padding-bottom: 30px;
-}
 
 #header {
   font-size: 27px;
@@ -92,24 +92,39 @@ margin: auto;
 img {
   border-radius: 50px;
   max-width: 100%;
-  height: auto; 
+  height: 500px; 
   margin-left: auto;
   margin-right: auto; 
   display: block; 
 }
 
-/* Trying to align the 3 cards I've created */
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
+#example-images {
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 500px;
+  height: 300px; 
 }
 
+.example-images {
+  border-radius: 10px;
+  width: 500px;
+  height: 300px; 
+}
+
+
+
+/* Trying to align the 3 cards I've created */
 .row {
   align-items: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  
+}
+.column {
+  float: left;
+  width: 30%;
+  padding: 0 10px;
 }
 
 .row:after {
