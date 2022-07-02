@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(0, 0, 0);
+  background-color: rgb(243, 220, 199);
+}
+
+/* navigation */
+.main-header {
+  background-size: cover;
+  padding-bottom: 30px;
+  }
+
+.main-nav li {
+  padding: 5% 5%;
+}
+
+.nav ul {
+  margin: 0;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav a {
+  display: inline-block;
+  padding: .5em;
+  text-decoration: none;
+}
+
+.main-nav {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  justify-content: center;
+  border-width: 0vmax;
+  color: black; 
+}
+
+.nav a:hover {
+  background-color:white;
+}
+
+
+/* Headers */
+
+#header {
+  font-size: 27px;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.h2 {
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.h3 {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Paragraphs */
+.text-styling {
+  font-size: 16px;
+  padding: 5px;
+}
+
+.small-detail {
+  font-size: 12px;
+  font-display: block;
+  height: auto;
+  max-width: 50%;
+  padding: 0.5%;
+  margin: auto;
+}
+
+.box {
+height: auto;
+max-width: 50%;
+padding: 0.5%;
+border: 5px solid black;
+margin: auto;
+}
+
+img {
+  border-radius: 50px;
+  max-width: 100%;
+  height: 500px; 
+  margin-left: auto;
+  margin-right: auto; 
+  display: block; 
+}
+
+#example-images {
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 500px;
+  height: 300px; 
+}
+
+.example-images {
+  border-radius: 10px;
+  width: 500px;
+  height: 300px; 
+}
+
+
+
+/* Trying to align the 3 cards I've created */
+.row {
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.column {
+  float: left;
+  width: 30%;
+  padding: 0 10px;
+}
+
+.row:after {
+  content:"";
+  display: table;
+  clear: both; 
+}
+
+/* Responsive CSS */
+
+@media screen and (min-width: 320px) {
+  body {
+  width: 100%;
+  font-size:14px;
+ } 
+}
+
+@media screen and (min-width: 768px) {
+  body {
+ font-size: 18px;
+ } 
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+  font-size: 20px;
+ } 
+}
