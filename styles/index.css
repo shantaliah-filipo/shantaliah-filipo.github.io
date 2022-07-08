@@ -98,9 +98,16 @@ padding: 50px;
   clear: both; 
 }
 
-p {
+/* Paragraphs */
+.paragraph-heading {
+
+}
+
+.paragraph-body {
   text-align: center;
 }
+
+/* Images */
 .img-caption {
   text-align: center;
 }
