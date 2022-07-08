@@ -2,23 +2,106 @@
   <head>
     <title>Sprint 3 Technical Blog</title>
     <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../styles/html-css.css" rel="stylesheet" type="text/css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet"> -->
+    <link href="../styles/index.css" rel="stylesheet" type="text/css"> 
     <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
   </head>
-
   
       <header class="main-header">
         <nav class="nav main-nav">
           <ul>
-            <li><a href="index.html">Home</li></a> 
+            <li><a href="../index.html">Home</li></a> 
             <li><a href="index.html">About Me</li></a>
             <li><a href="index.html">Dev Academy Journey</li></a>
           </ul>
-  
-        <h1></h1>
-    </header>
-  
 
-    <body>
-    <div class="center">
+        <h1>Sprint 3 - Introduction to Javascript</h1>
+
+          <h2>An analogy to describe Javascript and it’s relationship to HTML and CSS </h2>
+              <p>
+              The makeup of websites are often created by three aspects: HTML, CSS, and Javascript. 
+
+              An analogy for the relationship between HTML, CSS, and Javascript is the human body where:
+              The HTML is the skeleton
+              The CSS is the skin
+              The Javascript are the muscles.
+              
+              An HTML file of a website contains the written content and structure of the page itself. Like a skeleton, it is the foundation of the body of a website.  
+              
+              A CSS file contains the styling or decoration of the page. It’s where you can alter aspects such as colour schemes, fonts, positioning and layouts. It’s essentially the skin covering the skeleton. 
+              
+              A JavaScript file determines the dynamic and interactive elements on the page. This includes actions such as what happens when users click, hover, or type within certain elements of a website, however the opportunities for interactivity are endless. You can think of Javascript as the muscles on a human body as they are what allow for movement of the body.
+              </p>
+
+          <h2>Control flow and loops</h2>
+              <p>
+              In Javascript, the control flow is how the computer runs or executes code from top to bottom. 
+
+              Like watching a TV show for the very first-time, you start from the beginning and watch it in sequential order (unless you’re a weirdo). In Javascript, the computer starts reading from the first line and finishes at the last line. However, while this is the case, there are statements in Javascript such as functions, conditionals, and loops that can alter the control flow (i.e. how the computer runs the code). 
+              
+              Loops are conditional statements that repeat a given task until a given condition is met. In other words, it’s a sequence of instruction that is continually repeated until a certain condition is reached. In other words, a loop keeps looping until it can’t loop no more (based on the given condition). 
+              
+              There’s three parts to a loop: the loop variable, the condition, and the increment expression. We won’t go into too much details about what these mean at this stage. 
+              
+              Let’s use the example of making a bowl of cereal to explain the relationship between control flow. Based on the control flow, you could get your variables which would be your bowl, cereal, milk. 
+              
+              You could set a variety of loops for this activity (i.e. pour cereal into the bowl UNTIL it’s halfway, pour milk into the bowl UNTIL it covers the cereal). Once these conditions have been met, the control flow can continue (and then you can eat your bowl of cereal.
+              </p>
+
+          <h2>What is the DOM?</h2>
+            <p>
+            As we’ve already learned, a website is made up of these 3 elements: HTML, CSS, and Javascript. These 3 languages works together to make things happen.
+            Without CSS, the HTML just looks like a word document, and without Javascript, the HTML and CSS will just look like a prettied up brochure with no interactivity. 
+            
+            The Document Object Model (DOM) is the entire data representation of the objects that comprise the structure and content of a document on the web. 
+            According to <a href="https://www.freecodecamp.org/news/the-relationship-between-html-css-and-javascript-explained-by-building-a-city-a73a69c6343?fbclid=IwAR1oah9O2J1ZlS1vvZgr0HAZpov0xssXFxRDDZ27oyfi2OVefKbPnfvrYww">freeCodeCamp</a>, “It is a programming interface that allows us to create, change, or remove elements from the document. We can also add events to these elements to make our page more dynamic. The DOM views an HTML document as a tree of nodes. A node represents an HTML element.” (source https://www.freecodecamp.org/news/the-relationship-between-html-css-and-javascript-explained-by-building-a-city-a73a69c6343?fbclid=IwAR1oah9O2J1ZlS1vvZgr0HAZpov0xssXFxRDDZ27oyfi2OVefKbPnfvrYww)
+            
+            In short, the DOM is the glue that brings HTML, CSS, and Javascript together. The (DOM) is a way that we can change the HTML with Javascript. 
+            </p>
+
+          <h2>The difference between accessing data from arrays and objects</h2>
+            <p>
+              Arrays and objects are two ways of collecting data into a group, and it can be confusing to know when to use which. A good starting point is to think about what the specific data represents. 
+              If it's a single or individual entity with named properties, you'd want to use an object. 
+              If you have a group of entities of the same type, or if they should be ordered, you'd want to use an array
+
+              EXAMPLES:
+              
+            </p>
+
+          <h2>What are functions?</h2>
+              <p>
+              A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it (calls it). To return a value other than the default, a function must have a return statement that specifies the value to return.
+              Functions are useful as they allow you to define a block of code and then run it as many times as you desire.
+              </p>
+
+          
+      </header>
+    
+
+      <body>
+      <div class="center">
+<!-- 
+      <!DOCTYPE html>
+
+    <h1>JavaScript Café</h1>
+    <p id='whiteCoffee'></p>
+    <p id='blackCoffee'></p>
+    <p id='muffin'></p>
+    <p id='eggs'></p>
+    <p>====</p>
+    <p id="customerOrder"></p>
+    <p>====</p>
+    <p id="cash"></p>
+    <button class="button" id="customerButton">generate customer</button>
+    <button class="button" id="fillOrder">fill order</button>
+
+    <div class="container"></div>
+
+    <script src="cafe.js"></script>
+  </body>
+</html> -->
