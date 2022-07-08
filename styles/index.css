@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(0, 0, 0);
+  font-family:Verdana, Geneva, Tahoma, sans-serif
   background-color: rgb(243, 220, 199);
 }
 
@@ -40,7 +39,7 @@
 
 /* Header / Blog Title */
 .main-header {
-background-image: url(placeholder);
+/* background-image: url(placeholder); */
 background-color: rgb(243, 220, 199);
 background-size: cover;
 padding-bottom: 30px;
@@ -61,28 +60,54 @@ padding: 50px;
 .sprint-headings a:hover {
   background-color:white;
 }
+
+/* BOX MODEL */
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* cards for articles */
-.card {
+/* .card {
   background-color: peachpuff;
   justify-content: center;
   padding: 20px;
   margin-top: 20px;
   display: inline-block;
   border-width: 0vmax;
-}
+} */
 
-.center {
+/* .center {
   margin: auto;
   width: 50%;
   border: 3px solid green;
   padding: 10px;
-}
+} */
 /* Trying to align the 3 cards I've created */
-.column {
+/* .column {
   float: left;
   width: 25%;
   padding: 0 10px;
-}
+} */
 
 .row {
   align-items: center;
@@ -100,11 +125,14 @@ padding: 50px;
 
 /* Paragraphs */
 .paragraph-heading {
-
+font-size: 20px
 }
 
 .paragraph-body {
+  color: white;
   text-align: center;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif; 
 }
 
 /* Images */
