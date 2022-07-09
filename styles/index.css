@@ -14,11 +14,11 @@
   display: inline;
 }
 
-.nav a {
+/* .nav a {
   display: inline-block;
   padding: .5em;
   text-decoration: none;
-}
+} */
 
 .main-nav {
   text-align: center;
@@ -27,6 +27,8 @@
   justify-content: center;
   border-width: 0vmax;
   color: black; 
+  font-family: 'Poppins', sans-serif; 
+
 }
 
 .main-nav li {
@@ -37,10 +39,10 @@
   background-color:white;
 }
 
-/* Header / Blog Title */
+/* Header */
 .main-header {
 /* background-image: url(placeholder); */
-background-color: rgb(243, 220, 199);
+/* background-color: rgb(243, 220, 199); */
 background-size: cover;
 padding-bottom: 30px;
 }
@@ -50,6 +52,11 @@ background-color: black;
 font-size: 10px;
 text-align: center; 
 padding: 50px;
+}
+
+#main-heading {
+font-family: 'Poppins', sans-serif; 
+text-decoration-style: solid;
 }
 
 .sprint-headings {
@@ -64,44 +71,48 @@ padding: 50px;
 /* BOX MODEL */
 
 /* Create three unequal columns that floats next to each other */
+/* .content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+} */
+
 .column {
   float: left;
   padding: 10px;
 }
 
-/* Left and right column */
+Left and right column
 .column.side {
-  width: 25%;
-}
-
-/* Middle column */
-.column.middle {
   width: 50%;
 }
+
+/* Middle column
+.column.middle {
+  width: 50%;
+}  */
 
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
+} 
+
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;}
+
+.flex-container > div {
+  background-color: #b62525;
+  width: 750px;
+  margin: 10px;
+  padding: 30px;
 }
-
-/* cards for articles */
-/* .card {
-  background-color: peachpuff;
-  justify-content: center;
-  padding: 20px;
-  margin-top: 20px;
-  display: inline-block;
-  border-width: 0vmax;
-} */
-
-/* .center {
-  margin: auto;
-  width: 50%;
-  border: 3px solid green;
-  padding: 10px;
-} */
 /* Trying to align the 3 cards I've created */
 /* .column {
   float: left;
@@ -109,7 +120,7 @@ padding: 50px;
   padding: 0 10px;
 } */
 
-.row {
+/* .row {
   align-items: center;
   display: inline-block;
   align-items: center;
@@ -121,11 +132,13 @@ padding: 50px;
   content:"";
   display: table;
   clear: both; 
-}
+} */
 
 /* Paragraphs */
 .paragraph-heading {
-font-size: 20px
+font-size: 18px;
+font-weight: 700;
+font-family: 'Poppins', sans-serif; 
 }
 
 .paragraph-body {
@@ -133,6 +146,9 @@ font-size: 20px
   text-align: center;
   font-size: 14px;
   font-family: 'Poppins', sans-serif; 
+}
+.ul-para {
+  list-style-type: circle;
 }
 
 /* Images */
