@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   font-family:Verdana, Geneva, Tahoma, sans-serif
-  background-color: rgb(243, 220, 199);
 }
 
 
@@ -102,14 +101,13 @@ Left and right column
 
 .flex-container {
   display: flex;
-  background-color: DodgerBlue;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;}
 
 .flex-container > div {
-  background-color: #b62525;
-  width: 750px;
+  background-color: bisque;
+  width: 900px;
   margin: 10px;
   padding: 30px;
 }
@@ -142,7 +140,7 @@ font-family: 'Poppins', sans-serif;
 }
 
 .paragraph-body {
-  color: white;
+  color: rgb(12, 0, 0);
   text-align: center;
   font-size: 14px;
   font-family: 'Poppins', sans-serif; 
@@ -154,6 +152,9 @@ font-family: 'Poppins', sans-serif;
 /* Images */
 .img-caption {
   text-align: center;
+  font-family: 'Poppins', sans-serif; 
+  font-size: 12px;
+  margin-top: 2px;
 }
 .img {
   border-radius: 50px;
@@ -163,9 +164,26 @@ font-family: 'Poppins', sans-serif;
   margin-right: auto; 
   display: block; 
 }
+#loop-image {
+  width: 75%;
+  /* height: 500px; */
+  object-fit: contain;
+  /* border-radius: 50px; */
+  /* width: 25%; */
+  padding: 0 10px;
+
+}
 
 /* Responsive CSS */
-@media screen and (min-width: 320px) {
+.wrapper {overflow: auto;}
+
+@media screen and (min-width: 480px) {
+  #leftsidebar {width: 200px; float: left;}
+  #main {margin-left: 216px;}
+}
+#main {margin-left: 4px;}
+
+/* @media screen and (min-width: 320px) {
   body {
   width: 100%;
   font-size:14px;
@@ -182,4 +200,4 @@ font-family: 'Poppins', sans-serif;
   body {
   font-size: 20px;
  } 
-}
+} */
