@@ -1,80 +1,189 @@
 * {
   box-sizing: border-box;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(0, 0, 0);
-  background-color: rgb(243, 220, 199);
+  font-family:Verdana, Geneva, Tahoma, sans-serif
 }
-body {
-}
-/* Headers */
 
-#header {
-  font-size: 27px;
+
+/* navigation */
+.nav ul {
+  margin: 0;
+}
+
+.nav li {
+  display: inline;
+}
+
+/* .nav a {
+  display: inline-block;
+  padding: .5em;
+  text-decoration: none;
+} */
+
+.main-nav {
   text-align: center;
-  padding: 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  justify-content: center;
+  border-width: 0vmax;
+  color: black; 
+  font-family: 'Poppins', sans-serif; 
+
 }
 
-.h2 {
-  font-size: 25px;
-  text-align: center;
-  padding: 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.main-nav li {
+  padding: 5% 5%;
 }
 
-.h3 {
+.nav a:hover {
+  background-color:white;
+}
+
+/* Header */
+.main-header {
+/* background-image: url(placeholder); */
+/* background-color: rgb(243, 220, 199); */
+background-size: cover;
+padding-bottom: 30px;
+}
+
+.header {
+background-color: black;
+font-size: 10px;
+text-align: center; 
+padding: 50px;
+}
+
+#main-heading {
+font-family: 'Poppins', sans-serif; 
+text-decoration-style: solid;
+}
+
+.sprint-headings {
   font-size: 20px;
   text-align: center;
-  padding: 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+}
+.sprint-headings a:hover {
+  background-color:white;
 }
 
-/* Paragraphs */
-.text-styling {
-  font-size: 16px;
-  padding: 5px;
-}
+/* BOX MODEL */
 
-.small-detail {
-  font-size: 12px;
-  font-display: block;
-  height: auto;
-  max-width: 50%;
-  padding: 0.5%;
+/* Create three unequal columns that floats next to each other */
+/* .content {
+  max-width: 500px;
   margin: auto;
-}
+  background: white;
+  padding: 10px;
+} */
 
-.box {
-height: auto;
-max-width: 50%;
-padding: 0.5%;
-border: 5px solid black;
-margin: auto;
-}
-
-/* Trying to align the 3 cards I've created */
-.row {
-  align-items: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-}
 .column {
   float: left;
-  width: 30%;
+  padding: 10px;
+}
+
+Left and right column
+.column.side {
+  width: 50%;
+}
+
+/* Middle column
+.column.middle {
+  width: 50%;
+}  */
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+} 
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;}
+
+.flex-container > div {
+  background-color: bisque;
+  width: 900px;
+  margin: 10px;
+  padding: 30px;
+}
+/* Trying to align the 3 cards I've created */
+/* .column {
+  float: left;
+  width: 25%;
   padding: 0 10px;
+} */
+
+/* .row {
+  align-items: center;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  height: auto;
 }
 
 .row:after {
   content:"";
   display: table;
   clear: both; 
+} */
+
+/* Paragraphs */
+.paragraph-heading {
+font-size: 18px;
+font-weight: 700;
+font-family: 'Poppins', sans-serif; 
+}
+
+.paragraph-body {
+  color: rgb(12, 0, 0);
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif; 
+}
+.ul-para {
+  list-style-type: circle;
+}
+
+/* Images */
+.img-caption {
+  text-align: center;
+  font-family: 'Poppins', sans-serif; 
+  font-size: 12px;
+  margin-top: 2px;
+}
+.img {
+  border-radius: 50px;
+  max-width: 100%;
+  height: auto; 
+  margin-left: auto;
+  margin-right: auto; 
+  display: block; 
+}
+#loop-image {
+  width: 75%;
+  /* height: 500px; */
+  object-fit: contain;
+  /* border-radius: 50px; */
+  /* width: 25%; */
+  padding: 0 10px;
+
 }
 
 /* Responsive CSS */
+.wrapper {overflow: auto;}
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
+  #leftsidebar {width: 200px; float: left;}
+  #main {margin-left: 216px;}
+}
+#main {margin-left: 4px;}
+
+/* @media screen and (min-width: 320px) {
   body {
   width: 100%;
   font-size:14px;
@@ -91,28 +200,4 @@ margin: auto;
   body {
   font-size: 20px;
  } 
-}
-
-<!--
-img {
-  border-radius: 50px;
-  max-width: 100%;
-  height: 500px; 
-  margin-left: auto;
-  margin-right: auto; 
-  display: block; 
-}
-
-#example-images {
-  margin-top: 20px;
-  border-radius: 10px;
-  width: 500px;
-  height: 300px; 
-}
-
-.example-images {
-  border-radius: 10px;
-  width: 500px;
-  height: 300px; 
-}
--->
+} */
