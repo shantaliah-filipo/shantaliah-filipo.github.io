@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family:Verdana, Geneva, Tahoma, sans-serif
+  /* font-family:Verdana, Geneva, Tahoma, sans-serif */
 }
 
 
@@ -44,6 +44,7 @@
 /* background-color: rgb(243, 220, 199); */
 background-size: cover;
 padding-bottom: 30px;
+font-family: 'Poppins', sans-serif;
 }
 
 .header {
@@ -56,15 +57,7 @@ padding: 50px;
 #main-heading {
 font-family: 'Poppins', sans-serif; 
 text-decoration-style: solid;
-}
-
-.sprint-headings {
-  font-size: 20px;
-  text-align: center;
-  text-decoration: none;
-}
-.sprint-headings a:hover {
-  background-color:white;
+text-align: center;
 }
 
 /* BOX MODEL */
@@ -134,9 +127,17 @@ Left and right column
 
 /* Paragraphs */
 .paragraph-heading {
-font-size: 18px;
+font-size: 20px;
 font-weight: 700;
 font-family: 'Poppins', sans-serif; 
+text-align: center;
+text-decoration: double;
+}
+.paragraph-subheading {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
 }
 
 .paragraph-body {
