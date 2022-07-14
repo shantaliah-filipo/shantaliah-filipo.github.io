@@ -61,37 +61,6 @@ text-align: center;
 }
 
 /* BOX MODEL */
-
-/* Create three unequal columns that floats next to each other */
-/* .content {
-  max-width: 500px;
-  margin: auto;
-  background: white;
-  padding: 10px;
-} */
-
-.column {
-  float: left;
-  padding: 10px;
-}
-
-Left and right column
-.column.side {
-  width: 50%;
-}
-
-/* Middle column
-.column.middle {
-  width: 50%;
-}  */
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-} 
-
 .flex-container {
   display: flex;
   flex-direction: column;
@@ -104,13 +73,19 @@ Left and right column
   margin: 10px;
   padding: 30px;
 }
-/* Trying to align the 3 cards I've created */
+/* Images */
+
 /* .column {
   float: left;
-  width: 25%;
-  padding: 0 10px;
-} */
+  width: 50%;
+  padding: 5px;
+}
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
 /* .row {
   align-items: center;
   display: inline-block;
@@ -158,7 +133,7 @@ text-decoration: double;
   margin-top: 2px;
 }
 .img {
-  border-radius: 50px;
+  /* border-radius: 50px; */
   max-width: 100%;
   height: auto; 
   margin-left: auto;
@@ -169,10 +144,17 @@ text-decoration: double;
   width: 75%;
   /* height: 500px; */
   object-fit: contain;
-  /* border-radius: 50px; */
-  /* width: 25%; */
   padding: 0 10px;
 
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
 }
 
 /* Responsive CSS */
