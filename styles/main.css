@@ -159,19 +159,25 @@ text-decoration: double;
 }
 
 /* Responsive CSS */
-.wrapper {overflow: auto;}
+/* .wrapper {overflow: auto;}
 
 @media screen and (min-width: 480px) {
   #leftsidebar {width: 200px; float: left;}
   #main {margin-left: 216px;}
 }
-#main {margin-left: 4px;}
+#main {margin-left: 4px;} */ 
 
-/* @media screen and (min-width: 320px) {
+
+@media screen and (min-width: 320px) {
+  li {
+    display: block;
+    margin: 5px 0px;
+  }
   body {
-  width: 100%;
-  font-size:14px;
- } 
+    width: 100%;
+    font-size:14px;
+    display: block;
+
 }
 
 @media screen and (min-width: 768px) {
@@ -184,4 +190,4 @@ text-decoration: double;
   body {
   font-size: 20px;
  } 
-} */
+} 
