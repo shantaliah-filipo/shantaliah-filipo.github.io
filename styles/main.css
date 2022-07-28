@@ -22,7 +22,7 @@
 .main-nav {
   text-align: center;
   font-size: 1.2rem;
-  font-weight: lighter;
+  font-weight:bold;
   justify-content: center;
   border-width: 0vmax;
   color: black; 
@@ -118,6 +118,8 @@ text-decoration: double;
 
 .paragraph-body {
   color: rgb(12, 0, 0);
+  font-weight: bolder;
+  /* text-decoration: line-through; */
   text-align: center;
   font-size: 14px;
   font-family: 'Poppins', sans-serif; 
@@ -179,6 +181,10 @@ text-decoration: double;
     display: block;
     color:blueviolet
 }
+.paragraph-body {
+  color: blueviolet;
+  font-size: 12px;
+}
 }
 
 @media screen and (min-width: 768px) {
@@ -186,6 +192,10 @@ text-decoration: double;
     color: red;
  font-size: 18px;
  } 
+ .paragraph-body {
+   color: red;
+   font-size: 16px;
+ }
 }
 
 @media screen and (min-width: 1200px) {
@@ -193,4 +203,8 @@ text-decoration: double;
     color: yellowgreen;
   font-size: 20px;
  } 
+ .paragraph-body {
+   color: yellowgreen;
+   font-size: 18px;
+ }
 } 
